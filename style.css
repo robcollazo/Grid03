@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: 'Mulish';
+  font-size: 62.5%;
+
+  --mainBlue: #065e7c;
+  --colorText: #121214;
+  --colorTitle: #202024;
+  --lightBlue: #387e96;
+}
+
+input {
+  font-family: 'Mulish';
+}
+
+.App {
+  display: grid;
+  height: 100vh;
+}
+
+header {
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.55rem;
+
+  background-color: var(--mainBlue);
+  padding: 1.2rem 2.8rem;
+}
+
+header .logo {
+  background-color: white;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  background-color: var(--lightBlue);
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.input-wrapper input::placeholder {
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.title {
+  padding: 3.1rem 6.6rem 3.1rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.title h1 {
+  color: var(--colorTitle);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.title .review-wrapper {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.title img {
+  background-color: var(--mainBlue);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+
+.main-text {
+  padding: 0 2.6rem 3.4rem 2.2rem;
+
+  color: var(--colorText);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+aside {
+  padding-left: 2.2rem;
+  padding-right: 2.6rem;
+}
+
+h2 {
+  color: var(--colorTitle);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+  padding-bottom: 3.2rem;
+}
+
+.related {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 3.9rem;
+}
+
+.item {
+  display: flex;
+  gap: 1.6rem;
+}
+
+h3 {
+  color: var(--colorTitle);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.item p {
+  color: var(--colorText);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+footer {
+  background-color: var(--lightBlue);
+  padding: 1.6rem;
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
